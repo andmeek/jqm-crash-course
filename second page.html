@@ -8,26 +8,36 @@
 	<title>My basic jqm page 2</title>
 </head>
 <body>
-
 	<div data-role="page" id="home">
-		<div data-role="header"><h1>Welcome</h1></div>
+		<div data-role="header" data-theme="b"><h1>My Leads Form</h1></div>
 		<div data-role="content">
-			Page 1 body <a href="#p2">Go to page two</a>
-			<p>My custom content here</p>
-			<h3>I'm a header</h3>
+		
+			<h2>Input Lead</h2>
+			
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" name="name" id="name" />
+				<label for="tel">Tel:</label>
+				<input type="tel" name="tel" id="tel" />
+				<input type="submit" name="submit" value="Add" data-inline="true" data-icon="add" />
+			</form>
+			
+			<div data-role="collapsible" data-inset="false">
+				<h3>Current Leads</h3>
+				<p>You currently have X leads</p>			
+								
+				<ul data-role="listview" data-inset="true">
+					<li><a href="#home">Everyone</a></li>
+					<li>In</li>
+					<li>This</li>
+					<li><a href="#home">Room</a></li>
+				</ul>	
+			</div>
 			
 		</div>
 	</div>
 	
-	<div data-role="page" id="p2">
-		<div data-role="header">
-			<a href="#home" data-icon="home">Home</a><h1>Title</h1>
-		</div>
-		<div data-role="content">
-			Page 2 body
-			<a href="#p1">Go to page one</a>
-		</div>
-		<div data-role="footer">footer</div>
-	</div>	
+	<!--- who knows what here.... -->
+	
 </body>
 </html>
