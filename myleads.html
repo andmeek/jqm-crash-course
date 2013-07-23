@@ -10,7 +10,21 @@
 <body>
 
 	<div data-role="page" id="home">
-		<div data-role="header"><h1>myLeads</h1></div>
+		<div data-role="header">
+			<a href="#panel" data-icon="bars" data-iconpos="notext">Leads</a>
+			<h1>myLeads</h1>
+		</div>
+		<div data-role="panel" id="panel" data-theme="a">
+			<ul data-role="listview">
+				<li data-role="list-dividor">Recent Leads</li>
+				<li><a href="#viewall">Amy</a></li>
+				<li><a href="#viewall">Bob</a></li>
+				<li><a href="#viewall">Cindy</a></li>
+				<li><a href="#viewall">Lucy</a></li>
+				<li><a href="#viewall">Neil</a></li>				
+				<li><a href="#viewall">Tom</a></li>
+			</ul>	
+		</div>
 		<div data-role="content">		
 			<h2>Welcome back, user</h2>			
 			<div data-role="controlgroup">
@@ -126,7 +140,7 @@
 	
 	<div data-role="page" id="viewbytype">
 		<div data-role="header">
-			<h1>View By Type</h1>			
+			<h1>View By Source</h1>			
 			<a href="#home" data-icon="home">Home</a>
 		</div>
 		<div data-role="content">
